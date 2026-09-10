@@ -10,7 +10,7 @@ test("thruthy operators", () => {
   var num1 = 100;
   var num2 = -20;
 
-  expect(num1).toBeGreaterThan(10);
+  expect(num1).toBeGreaterThan(num2);
 });
 
 /*
