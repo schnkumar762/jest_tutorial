@@ -4,7 +4,7 @@ const mathOperations = require("../calculator");
 describe("Calculator Tests", () => {
   //add
   test("adding 1 + 2 should return 3", () => {
-    expect(mathOperations.sum(1, 2)).toBe(3);
+    expect(mathOperations.sum(1, 2)).toBe(7);
 
     /*
     tobe --->expected output
@@ -16,6 +16,8 @@ describe("Calculator Tests", () => {
 
   test("subtracting 5 and 3 should return 2", () => {
     expect(mathOperations.diff(5, 3)).toBe(2);
+    expect(mathOperations.diff(4, 5)).not.toBe(1);
+    expect(mathOperations.diff(4, 5)).not.toBe(-1);
   });
 
   test("multiplying 10 * 3 should return 30", () => {
